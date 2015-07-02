@@ -1,0 +1,62 @@
+
+  519  mkdir test-git
+  520  cd test-git
+  521  clear
+  522  git init
+  523  ls -artl
+  524  cd .git
+  525  ls
+  526  cd ..
+  527  clear
+  528  touch info.txt
+  529  ls
+  530  ls
+  531  git remote add github git@github.com:pvtech/test-git.git
+  532  git push github master
+  533  git add .
+  534  git commit
+  536  clear
+  537  git push github master
+  538  vi test.txt
+  539  ls
+  540  vi info.txt
+  535  git log
+  541  ls
+  542  cat info.txt
+  543  git add .
+  544  git commit -m 'second commit by BP'
+  545  git log
+  546  git remote -v
+  547  clear
+  548  git log
+  549  git pull github master
+  550  clear
+  551  vi info.txt
+  552  git add .
+  553  git commit -m 'manual merge'
+  554  git push github master
+  555  git log
+  556  clear
+  557  touch data.txt
+  558  git add .
+  559  git commit -m 'BP created the new file data.txt'
+  560  git pull github master
+  561  git log
+  562  clear
+  563  ls
+  564  git branch
+  565  git branch tryout10
+  566  git branch
+  567  open -a 'webstorm' .
+  568  history >> cmd.txt
+   git remote -v
+    501  cd .idea
+    502  ls
+    503  cd .
+    504  cd ..
+    505  ls
+    506  git branch
+    507  git push origin issue:issue
+    508  git push github issue:issue
+    509  git push github :issue
+    510  history >> cmd2.txt
